@@ -1,0 +1,128 @@
+#skills {
+    width: 100%;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000000; /* Dark theme background */
+    color: #ffffff;
+}
+
+.skillSubtitle {
+    color: #ff8c61; /* Orange accent */
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.skillTitle, .EducationTitle {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 1rem 0;
+    color: #ffffff;
+}
+
+.skillDescription {
+    color: #b5b5b5;
+    font-size: 1.1rem;
+    max-width: 40rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+/* Grid Layout for Skills */
+.skillCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 75rem;
+}
+
+.skillCard {
+    background: #121212; /* Darker card background */
+    padding: 2.5rem 2rem;
+    border-radius: 1.2rem;
+    border: 1px solid #222;
+    text-align: left;
+    transition: all 0.4s ease-in-out; /* Smooth hover transition */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Orange Hover Effect */
+.skillCard:hover {
+    background: #ff8c61; /* Orange box on hover */
+    transform: translateY(-10px);
+    border-color: #ff8c61;
+    box-shadow: 0 15px 30px rgba(255, 140, 97, 0.3);
+}
+
+/* Text color swap on hover for readability */
+.skillCard:hover h2, 
+.skillCard:hover p {
+    color: #000000;
+}
+
+.skillCardIcon {
+    height: 3rem;
+    width: 3rem;
+    background: #1e1e1e;
+    padding: 0.6rem;
+    border-radius: 0.8rem;
+    transition: background 0.3s ease;
+}
+
+.skillCard:hover .skillCardIcon {
+    background: #ffffff;
+}
+
+.skillCard h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* Education Bar Styling */
+.educationSection {
+    margin-top: 6rem;
+    width: 100%;
+    text-align: center;
+}
+
+.Edubar {
+    display: flex;
+    align-items: center;
+    background: #121212;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid #222;
+    max-width: 50rem;
+    margin: 2rem auto;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.Edubar:hover {
+    border-color: #00df9a; /* Green accent for education hover */
+}
+
+.Edubarbs {
+    height: 6rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media screen and (max-width: 768px) {
+    .skillCardsContainer { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (max-width: 768px) {
+    .skillCardsContainer { grid-template-columns: 1fr; }
+    .skillCard { text-align: center; align-items: center; }
+    .Edubar { flex-direction: column; text-align: center; }
+    .Edubarbs { margin-right: 0; margin-bottom: 1.5rem; }
+}

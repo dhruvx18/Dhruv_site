@@ -1,0 +1,150 @@
+#experience {
+  width: 100vw;
+  max-width: 65rem;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  border-bottom: 2px solid #00df9a;
+  width: fit-content;
+  padding-bottom: 5px;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+}
+
+/* Central vertical line */
+.verticalLine {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.timelineItem {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to top of the content */
+  width: 100%;
+  margin-bottom: 4.5rem; /* Increased spacing for readability */
+  position: relative;
+  z-index: 2;
+}
+
+.timelineDate {
+  flex: 1;
+  text-align: right;
+  padding-right: 3.5rem;
+  font-size: 0.95rem;
+  color: #00df9a; /* Changed to accent color for dates */
+  font-weight: 500;
+}
+
+.timelineDot {
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border: 3px solid #00df9a; /* Added green ring to the dot */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 223, 154, 0.5);
+  margin-top: 5px;
+}
+
+.timelineContent {
+  flex: 1;
+  padding-left: 3.5rem;
+  text-align: left;
+}
+
+.timelineContent h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.timelineContent .role {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+
+.timelineContent .location {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 200;
+}
+
+/* ... keep your existing desktop styles above ... */
+
+/* --- MOBILE RESPONSIVE --- */
+@media screen and (max-width: 768px) {
+  #experience {
+    padding: 3rem 1.5rem; /* Adds consistent spacing to the whole section container */
+  }
+
+  .expTitle {
+    font-size: 2.2rem;
+    padding-top: 1rem;
+    margin: 0 1rem 3rem 1rem;
+    
+    /* FIX: Ensures title doesn't touch the edges */
+    width: auto; 
+    max-width: 90%; 
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .verticalLine {
+    left: 30px; /* Shifted slightly to give more room */
+  }
+
+  .timelineItem {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 60px; /* Space between the dot and the text */
+    margin-bottom: 3rem;
+  }
+
+  .timelineDate {
+    text-align: left;
+    padding-right: 0;
+    margin-bottom: 0.2rem;
+    font-size: 0.85rem;
+  }
+
+  .timelineDot {
+    position: absolute;
+    left: 23px; /* Aligns with the shifted vertical line */
+    top: 5px;
+  }
+
+  .timelineContent {
+    padding-left: 0;
+  }
+  
+  .timelineContent h3 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .timelineContent .role {
+    font-size: 1rem;
+  }
+}
