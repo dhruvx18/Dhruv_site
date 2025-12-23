@@ -3,7 +3,7 @@ import './intro.css';
 import bg from "../../assets/image2.jpeg";
 import btnImg from "../../assets/download.png"
 import videoBg from "../../assets/backgroundvideo.mp4";
-import myResume from "../../assets/myResume.pdf"
+
 import {Link} from 'react-scroll';
 
 const Intro = () => {
@@ -20,11 +20,12 @@ const Intro = () => {
             <span className="introText">I am <span className="introName">Dhruv,</span><br></br> a Software Engineer</span>
             <p className="introPara">with strong CS fundamentals and real-world experience, while constantly exploring new places and perspectives.</p>
             
-            <a href={myResume} download="Dhruv_Resume.pdf" className="resumeLink">
+            <a href="/Dhruv_Resume.pdf" download="Dhruv_Resume.pdf" className="resumeLink">
               <button className="btn">
-                <img src={btnImg} alt="hireme image" className="btnImg" />
-                Resume
-                </button>
+
+                <img src={btnImg} alt="download icon" className="btnImg" />
+                    Resume
+              </button>
             </a>
             
             
