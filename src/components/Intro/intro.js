@@ -17,7 +17,7 @@ const Intro = () => {
      
         <div className="introContent">
             <span className="hello">Hi, </span>
-            <span className="introText">I am <span className="introName">Dhruv,</span><br></br> a Software Engineer</span>
+            <span className="introText">I am <span className="introName">Dhruv,</span><br></br> a Fullstack Developer</span>
             <p className="introPara">with strong CS fundamentals and real-world experience, while constantly exploring new places and perspectives.</p>
             
             <a href="/Dhruv_Resume.pdf" download="Dhruv_Resume.pdf" className="resumeLink">
