@@ -15,60 +15,48 @@ const Works = () => {
       <div className="ProjectList">
         {/* Card 1 */}
         <div className="ProjectCard">
-          <img src={Project1} alt="RedRoute" className="ProjectImg" />
-          <div className="ProjectContent">
-            <div className="ProjectHeader">
-              <h3>RedRoute</h3>
-              <span className="ProjectDate">Sept'25 - Present</span>
+            <div className="ProjectImgPlaceholder">Coming Soon</div>
+            <div className="ProjectContent">
+              <div className="ProjectHeader">
+                <h3>Project 01</h3>
+              </div>
+              <p className="updatingText">Content yet to be uploaded.</p>
+              <div className="ProjectLinks">
+                <button className="LinkBtn working" disabled>Under Process</button>
+              </div>
             </div>
-            <div className="ProjectLinks">
-              <button className="LinkBtn">Demo</button>
-              <button className="LinkBtn">Code</button>
-            </div>
-            <p>Motion-rich travel booking app to discover and book stays and experiences. Cinematic UI with accessible search.</p>
-            <div className="TechTags">
-              <span>React (TS)</span> <span>Vite</span> <span>Framer Motion</span> <span>Tailwind CSS</span>
-            </div>
-          </div>
-        </div>
+      </div>
 
-        {/* Card 2 */}
-        <div className="ProjectCard">
-          <img src={Project2} alt="FlickPick" className="ProjectImg" />
-          <div className="ProjectContent">
-            <div className="ProjectHeader">
-              <h3>FlickPick</h3>
-              <span className="ProjectDate">Aug'25 - Sept'25</span>
-            </div>
-            <div className="ProjectLinks">
-              <button className="LinkBtn">Demo</button>
-              <button className="LinkBtn">Code</button>
-            </div>
-            <p>Movie discovery and streaming interface with favorites, search, and trending sections. TMDB API integration.</p>
-            <div className="TechTags">
-              <span>React</span> <span>Vite</span> <span>React Router</span> <span>TMDB API</span>
-            </div>
-          </div>
-        </div>
+{/* Card 2 */}
+  <div className="ProjectCard">
+    <div className="ProjectImgPlaceholder">Coming Soon</div>
+    <div className="ProjectContent">
+      <div className="ProjectHeader">
+        <h3>Project 02</h3>
+      </div>
+      <p className="updatingText">Content yet to be uploaded.</p>
+      <div className="ProjectLinks">
+        <button className="LinkBtn working" disabled>Under Process</button>
+      </div>
+    </div>
+  </div>
 
         {/* Card 3 */}
-        <div className="ProjectCard">
-          <img src={Project3} alt="Storify" className="ProjectImg" />
-          <div className="ProjectContent">
-            <div className="ProjectHeader">
-              <h3>Storify</h3>
-              <span className="ProjectDate">Jan'24 - May'24</span>
-            </div>
-            <div className="ProjectLinks">
-              <button className="LinkBtn">Code</button>
-            </div>
-            <p>A website that uses machine learning to suggest music for social media stories, integrating with Spotify.</p>
-            <div className="TechTags">
-              <span>Python</span> <span>Scikit-learn</span> <span>React</span> <span>Spotify API</span>
+          <div className="ProjectCard">
+            <div className="ProjectImgPlaceholder">Coming Soon</div>
+            <div className="ProjectContent">
+              <div className="ProjectHeader">
+                <h3>Project 03</h3>
+              </div>
+              <p className="updatingText">Content yet to be uploaded.</p>
+              <div className="ProjectLinks">
+                <button className="LinkBtn working" disabled>Under Process</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+
+      
     </section>
   );
 };

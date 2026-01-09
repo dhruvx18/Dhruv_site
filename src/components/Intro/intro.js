@@ -1,6 +1,6 @@
 import React from 'react';
 import './intro.css';
-import bg from "../../assets/image2.jpeg";
+import bg from "../../assets/image3.jpeg";
 import btnImg from "../../assets/download.png"
 import videoBg from "../../assets/backgroundvideo.mp4";
 
@@ -17,8 +17,8 @@ const Intro = () => {
      
         <div className="introContent">
             <span className="hello">Hi, </span>
-            <span className="introText">I am <span className="introName">Dhruv,</span><br></br> a Fullstack Developer</span>
-            <p className="introPara">with strong CS fundamentals and real-world experience, while constantly exploring new places and perspectives.</p>
+            <span className="introText">I am <span className="introName">Dhruv,</span><br></br>a Data Science</span>
+            <p className="introPara">student with strong CS fundamentals, building data-driven solutions and seeking entry-level Data Science & BA roles.</p>
             
             <a href="/Dhruv_Resume.pdf" download="Dhruv_Resume.pdf" className="resumeLink">
               <button className="btn">

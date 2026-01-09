@@ -5,20 +5,20 @@ const Experience = () => {
   const experiences = [
 
     {
-      company: "Fintech Glb",
-      role: "Application Support & Maintenance Analyst (Contract)",
+      company: "Fintech Global",
+      role: "App. Support & Maintenance Analyst (Contract)",
       location: "Gandhinagar, Gujarat, India",
       duration: "August 2025 - Nov 2025"
     },
     {
       company: "KraftHeinz GCC",
-      role: "Software Engineer",
+      role: " Data & Automation Developer",
       location: "Ahmedabad, Gujarat, India",
       duration: "January 2025 - August 2025"
     },
     {
       company: "Fristine Infotech",
-      role: "Zoho Developer",
+      role: "CRM Dev",
       location: "Remote",
       duration: "October 2024 - December 2024"
     },

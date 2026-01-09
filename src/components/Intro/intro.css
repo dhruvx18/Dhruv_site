@@ -124,23 +124,20 @@
 
 .bg {
   position: absolute;
-  right: 10rem;     /* Adjusted from 0 to bring it into view */
-  top: 7rem;
+  right: 5rem;      /* Decreased from 10rem to move it closer to the edge and make room */
+  top: 5rem;        /* Moved slightly up to accommodate the larger size */
 
-  height: 60%;
-  aspect-ratio: 1/1; /* Forces it to stay square */
-  width: auto;
+  height: 85%;      /* Increased from 65% to make it much larger */
+  width: auto;      /* Keeps the original rectangular proportions */
 
-  object-fit: cover;
-  z-index: 1;        /* Changed to 1 so it sits above the background but behind text if needed */
-  
-  /* The "Squared and Rounded" look */
+  object-fit: contain; 
+  z-index: 1;
+
   border-radius: 2rem; 
-  border: 2px solid #333; /* Optional: adds a subtle border to define the square */
+  border: 2px solid #333; 
 
   animation: fadeUp 1.2s ease forwards;
 }
-
 /* =========================
    ANIMATIONS
 ========================= */
