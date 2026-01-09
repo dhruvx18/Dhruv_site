@@ -1,6 +1,6 @@
 import React from 'react';
 import './intro.css';
-import bg from "../../assets/image3.jpeg";
+import bg from "../../assets/image6.png";
 import btnImg from "../../assets/download.png"
 import videoBg from "../../assets/backgroundvideo.mp4";
 
