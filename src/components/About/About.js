@@ -74,7 +74,7 @@ const About = () => {
       >
         <h2>Monash University,Clayton Campus,VIC,AUS</h2>
       </a>
-      <p>MS in Data Science (2025–2027)</p>
+      <p>MS in Data Science (2026–2027)</p>
     </div>
   </div>
 
