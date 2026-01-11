@@ -69,7 +69,7 @@ const Contact = () => {
             <div className="infoIcon">📍</div>
             <div className="infoText">
               <span>Location</span>
-              <p>Doha, Qatar</p>
+              <p>Melbourne,Victoria,Australia</p>
             </div>
           </div>
 
